@@ -5,22 +5,15 @@
     <classes>
       <class name="com.java.bookTest.ProductPageTestCases">
         <methods>
-          <include name="clickBookShelfTest"/>
+          <include name="ExcludeOutOfStockTest"/>
+          <include name="PriceSliderTest"/>
+          <include name="tearDown"/>
           <include name="afterTest"/>
+          <include name="startReport"/>
           <include name="beforeTest"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- com.java.bookTest.ProductPageTestCases -->
     </classes>
   </test> <!-- Test1(failed) -->
-  <test thread-count="5" name="Test2(failed)">
-    <classes>
-      <class name="com.java.bookTest.HomePageTestCases">
-        <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="ExtractDeal"/>
-        </methods>
-      </class> <!-- com.java.bookTest.HomePageTestCases -->
-    </classes>
-  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

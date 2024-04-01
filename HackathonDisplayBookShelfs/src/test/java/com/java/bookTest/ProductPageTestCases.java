@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import com.java.book.HomePage;
 import com.java.book.ProductPage;
 
+import utilities.reportGenerator;
+
 import org.testng.annotations.BeforeTest;
 
 import java.time.Duration;
@@ -17,28 +19,32 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
-public class ProductPageTestCases {
+public class ProductPageTestCases extends reportGenerator {
 	WebDriver driver;
 	HomePage page;
 	ProductPage page2;
 
 	@Test(priority = 1)
 	public void checkUrl() {
+		test = extent.startTest("test1");
 		String url = driver.getCurrentUrl();
 		Assert.assertEquals(url, "https://www.urbanladder.com/");
 	}
 
 	@Test(priority = 2)
 	public void clickBookShelfTest() {
-		page = new HomePage(driver);
-		page.clickBookshelf();
+		test = extent.startTest("test2");
+
 		Boolean clickBook = driver.findElement(By.xpath("//a[@href='/bookshelf?src=explore_categories']")).isDisplayed();
 		Assert.assertTrue(clickBook);
+		page = new HomePage(driver);
+		page.clickBookshelf();
 
 	}
 
 	@Test(priority = 3)
 	public void popupTest() {
+		test = extent.startTest("test3");
 		page2 = new ProductPage(driver);
 		page2.Popup();
 		Boolean popup = driver.findElement(By.xpath("//*[@class='close-reveal-modal hide-mobile']")).isDisplayed();
@@ -48,6 +54,7 @@ public class ProductPageTestCases {
 
 	@Test(priority = 4)
 	public void PriceSliderTest() throws InterruptedException {
+		test = extent.startTest("test4");
 		page2 = new ProductPage(driver);
 		page2.PriceSlider();
 		List<String>L1=new ArrayList<String>();
@@ -79,6 +86,7 @@ public class ProductPageTestCases {
 
 	@Test(priority = 6)
 	public void ExcludeOutOfStockTest() {
+		test = extent.startTest("test5");
 		page2 = new ProductPage(driver);
 		page2.ExcludeOutOfStock();
 		Boolean outOfStock = driver.findElement(By.id("filters_availability_In_Stock_Only")).isSelected();
@@ -87,6 +95,7 @@ public class ProductPageTestCases {
 
 	@Test(priority = 7)
 	public void listOfProductsTest() throws InterruptedException {
+		test = extent.startTest("test6");
 		page2 = new ProductPage(driver);
 		List<String> L2 =page2.listOfProducts();
 		boolean flag = true;
@@ -104,7 +113,7 @@ public class ProductPageTestCases {
 		driver.get("https://urbanladder.com/");
 
 		driver.manage().window().maximize();
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 
 	}
 

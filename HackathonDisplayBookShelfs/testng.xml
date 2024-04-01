@@ -10,4 +10,9 @@
       <class name="com.java.bookTest.HomePageTestCases"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test3">
+    <classes>
+      <class name="com.java.bookTest.GiftCardPageTestCases"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

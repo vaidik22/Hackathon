@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 public class ReferanceCode {
 	static WebDriver driver;
@@ -229,7 +230,7 @@ public class ReferanceCode {
 
 				  String expectedMsg = "Please match the requested format.";
 
-//				  assertEquals(actualMsg, expectedMsg);
+				  Assert.assertEquals(actualMsg, expectedMsg);
 
 				  System.out.println(actualMsg);
 

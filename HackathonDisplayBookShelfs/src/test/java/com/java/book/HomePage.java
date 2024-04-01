@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 public class HomePage extends basePage{
 	//By element = By.xpath("//*[@id=\"home\"]/div[1]/div[4]/div[3]/div[1]");
 	By bookShelf = By.xpath("//a[@href='/bookshelf?src=explore_categories']");
-	By giftCard = By.xpath("//a[@href='/gift-cards?src=g_footer']");
+	By giftCard = By.xpath("//*[@id=\"header\"]/section/div/ul[2]/li[3]/a");
 	By dealzone = By.xpath("//li[@class='topnav_item dealzoneunit']");
 	int j;
 	By dealZoneData = By.xpath("//li[@class='topnav_item dealzoneunit']//li["+ j +"]//span[1]");
@@ -39,12 +39,12 @@ public class HomePage extends basePage{
 
 	public List<String> extractDealsZone() throws InterruptedException {
 		WebElement submenu = driver.findElement(dealzone);
-Thread.sleep(4000);
 		Actions moveCurser = new Actions(driver);
 
 		moveCurser.moveToElement(submenu).perform();
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("arguments[0].style.display='block'", submenu);
+		Thread.sleep(4000);
 
 		List<String> L2 = new ArrayList<String>();
 

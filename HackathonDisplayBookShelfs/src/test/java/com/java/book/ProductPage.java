@@ -57,11 +57,13 @@ public class ProductPage extends basePage{
  
 		priceElement = driver.findElement(priceElement1);
 		jse.executeScript("arguments[0].style.display = 'block'", priceElement);
+		Thread.sleep(3000);
+		 
 		slider = driver.findElement(slider1);
 		actions.dragAndDropBy(slider, -274, 0).perform();
 		jse.executeScript("arguments[0].style.display = 'none'", priceElement);
-		Thread.sleep(4000);
- 
+		Thread.sleep(7000);
+		 
 	}
  
 	public void StorageType() {
@@ -96,7 +98,7 @@ public class ProductPage extends basePage{
 			System.out.println(x);
 		}
  
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 		return L1;
  
 	}
