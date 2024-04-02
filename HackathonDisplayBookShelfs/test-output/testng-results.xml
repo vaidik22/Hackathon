@@ -1,289 +1,519 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="15" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-29T17:25:33 IST" name="Suite" finished-at="2024-03-29T17:26:39 IST" duration-ms="65565">
+  <suite started-at="2024-04-02T15:37:54 IST" name="Suite" finished-at="2024-04-02T15:39:42 IST" duration-ms="108031">
     <groups>
+      <group name="smoketest">
+        <method signature="HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@6572421]" name="checkTitle" class="com.java.bookTest.HomePageTestCases"/>
+        <method signature="HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@6572421]" name="checkUrl" class="com.java.bookTest.HomePageTestCases"/>
+      </group> <!-- smoketest -->
     </groups>
-    <test started-at="2024-03-29T17:25:33 IST" name="Test1" finished-at="2024-03-29T17:26:04 IST" duration-ms="30946">
+    <test started-at="2024-04-02T15:37:54 IST" name="Test1" finished-at="2024-04-02T15:38:38 IST" duration-ms="43404">
       <class name="com.java.bookTest.ProductPageTestCases">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:33 IST" name="beforeTest" finished-at="2024-03-29T17:25:43 IST" duration-ms="9348" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:37:54 IST" name="beforeTest" finished-at="2024-04-02T15:38:09 IST" duration-ms="14944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:43 IST" name="checkUrl" finished-at="2024-03-29T17:25:43 IST" duration-ms="24" status="PASS">
+        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:09 IST" name="checkUrl" finished-at="2024-04-02T15:38:09 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUrl -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:43 IST" name="getResult" finished-at="2024-03-29T17:25:43 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:09 IST" name="takeScreenShot" finished-at="2024-04-02T15:38:10 IST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:10 IST" name="getResult" finished-at="2024-04-02T15:38:10 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=ProductPageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@28eaa59a] output={null}]]]>
+                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=ProductPageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:43 IST" name="clickBookShelfTest" finished-at="2024-03-29T17:25:45 IST" duration-ms="2089" status="PASS">
+        <test-method signature="clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:10 IST" name="clickBookShelfTest" finished-at="2024-04-02T15:38:12 IST" duration-ms="2247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickBookShelfTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:45 IST" name="getResult" finished-at="2024-03-29T17:25:45 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:12 IST" name="takeScreenShot" finished-at="2024-04-02T15:38:13 IST" duration-ms="853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:13 IST" name="getResult" finished-at="2024-04-02T15:38:13 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickBookShelfTest status=SUCCESS method=ProductPageTestCases.clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@28eaa59a] output={null}]]]>
+                <![CDATA[[TestResult name=clickBookShelfTest status=SUCCESS method=ProductPageTestCases.clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:45 IST" name="popupTest" finished-at="2024-03-29T17:25:48 IST" duration-ms="3121" status="PASS">
+        <test-method signature="popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:13 IST" name="popupTest" finished-at="2024-04-02T15:38:18 IST" duration-ms="5229" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.java.bookTest.ProductPageTestCases.popupTest(ProductPageTestCases.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popupTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:48 IST" name="getResult" finished-at="2024-03-29T17:25:48 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:18 IST" name="takeScreenShot" finished-at="2024-04-02T15:38:19 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:19 IST" name="getResult" finished-at="2024-04-02T15:38:19 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=popupTest status=SUCCESS method=ProductPageTestCases.popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@28eaa59a] output={null}]]]>
+                <![CDATA[[TestResult name=popupTest status=FAILURE method=ProductPageTestCases.popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:48 IST" name="PriceSliderTest" finished-at="2024-03-29T17:25:59 IST" duration-ms="10730" status="PASS">
+        <test-method signature="PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:19 IST" name="PriceSliderTest" finished-at="2024-04-02T15:38:33 IST" duration-ms="13811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PriceSliderTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:59 IST" name="getResult" finished-at="2024-03-29T17:25:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:33 IST" name="takeScreenShot" finished-at="2024-04-02T15:38:33 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:33 IST" name="getResult" finished-at="2024-04-02T15:38:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PriceSliderTest status=SUCCESS method=ProductPageTestCases.PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@28eaa59a] output={null}]]]>
+                <![CDATA[[TestResult name=PriceSliderTest status=SUCCESS method=ProductPageTestCases.PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:59 IST" name="StorageTypeTest" finished-at="2024-03-29T17:25:59 IST" duration-ms="310" status="PASS">
+        <test-method signature="StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:33 IST" name="StorageTypeTest" finished-at="2024-04-02T15:38:33 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StorageTypeTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:59 IST" name="getResult" finished-at="2024-03-29T17:25:59 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:33 IST" name="takeScreenShot" finished-at="2024-04-02T15:38:34 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="getResult" finished-at="2024-04-02T15:38:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=StorageTypeTest status=SUCCESS method=ProductPageTestCases.StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@28eaa59a] output={null}]]]>
+                <![CDATA[[TestResult name=StorageTypeTest status=SUCCESS method=ProductPageTestCases.StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:59 IST" name="ExcludeOutOfStockTest" finished-at="2024-03-29T17:25:59 IST" duration-ms="148" status="PASS">
+        <test-method signature="ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="ExcludeOutOfStockTest" finished-at="2024-04-02T15:38:34 IST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExcludeOutOfStockTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:59 IST" name="getResult" finished-at="2024-03-29T17:25:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="takeScreenShot" finished-at="2024-04-02T15:38:34 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="getResult" finished-at="2024-04-02T15:38:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExcludeOutOfStockTest status=SUCCESS method=ProductPageTestCases.ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@28eaa59a] output={null}]]]>
+                <![CDATA[[TestResult name=ExcludeOutOfStockTest status=SUCCESS method=ProductPageTestCases.ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:25:59 IST" name="listOfProductsTest" finished-at="2024-03-29T17:26:01 IST" duration-ms="2203" status="PASS">
+        <test-method signature="listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="listOfProductsTest" finished-at="2024-04-02T15:38:34 IST" duration-ms="259" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11ee05815025adbdd22dbdc2d7237fc8, getElementAttribute {name=title, id=1DE39CB77F7E04315CDCEE7A40F68325_element_266}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61077/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (11ee05815025adbdd22dbdc2d7237fc8)] -> xpath: //div[@class='categories row']//li[3]//a[@class="product-title-block"]]
+Session ID: 11ee05815025adbdd22dbdc2d7237fc8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11ee05815025adbdd22dbdc2d7237fc8, getElementAttribute {name=title, id=1DE39CB77F7E04315CDCEE7A40F68325_element_266}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61077/devtoo..., se:cdpVersion: 121.0.6167.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (11ee05815025adbdd22dbdc2d7237fc8)] -> xpath: //div[@class='categories row']//li[3]//a[@class="product-title-block"]]
+Session ID: 11ee05815025adbdd22dbdc2d7237fc8
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:149)
+at com.java.book.ProductPage.listOfProducts(ProductPage.java:92)
+at com.java.bookTest.ProductPageTestCases.listOfProductsTest(ProductPageTestCases.java:104)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listOfProductsTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:26:01 IST" name="getResult" finished-at="2024-03-29T17:26:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="takeScreenShot" finished-at="2024-04-02T15:38:34 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="getResult" finished-at="2024-04-02T15:38:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=listOfProductsTest status=SUCCESS method=ProductPageTestCases.listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@28eaa59a] output={null}]]]>
+                <![CDATA[[TestResult name=listOfProductsTest status=FAILURE method=ProductPageTestCases.listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@28eaa59a]" started-at="2024-03-29T17:26:01 IST" name="afterTest" finished-at="2024-03-29T17:26:04 IST" duration-ms="2917" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-02T15:38:34 IST" name="afterTest" finished-at="2024-04-02T15:38:38 IST" duration-ms="3211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.java.bookTest.ProductPageTestCases -->
     </test> <!-- Test1 -->
-    <test started-at="2024-03-29T17:26:04 IST" name="Test2" finished-at="2024-03-29T17:26:21 IST" duration-ms="16356">
+    <test started-at="2024-04-02T15:38:38 IST" name="Test2" finished-at="2024-04-02T15:38:56 IST" duration-ms="18386">
       <class name="com.java.bookTest.HomePageTestCases">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@323b36e0]" started-at="2024-03-29T17:26:04 IST" name="beforeTest" finished-at="2024-03-29T17:26:12 IST" duration-ms="7686" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:38 IST" name="beforeTest" finished-at="2024-04-02T15:38:48 IST" duration-ms="9945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@323b36e0]" started-at="2024-03-29T17:26:12 IST" name="checkUrl" finished-at="2024-03-29T17:26:12 IST" duration-ms="12" status="PASS">
+        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:48 IST" name="checkUrl" finished-at="2024-04-02T15:38:48 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUrl -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@323b36e0]" started-at="2024-03-29T17:26:12 IST" name="getResult" finished-at="2024-03-29T17:26:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:48 IST" name="getResult" finished-at="2024-04-02T15:38:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@323b36e0] output={null}]]]>
+                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@6572421] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ExtractDeal()[pri:2, instance:com.java.bookTest.HomePageTestCases@323b36e0]" started-at="2024-03-29T17:26:12 IST" name="ExtractDeal" finished-at="2024-03-29T17:26:18 IST" duration-ms="6363" status="PASS">
+        <test-method signature="checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:48 IST" name="checkTitle" finished-at="2024-04-02T15:38:48 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:48 IST" name="getResult" finished-at="2024-04-02T15:38:48 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkTitle status=SUCCESS method=HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@6572421] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:48 IST" name="ExtractDeal" finished-at="2024-04-02T15:38:54 IST" duration-ms="6464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtractDeal -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@323b36e0]" started-at="2024-03-29T17:26:18 IST" name="afterTest" finished-at="2024-03-29T17:26:21 IST" duration-ms="2288" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@323b36e0]" started-at="2024-03-29T17:26:18 IST" name="getResult" finished-at="2024-03-29T17:26:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:54 IST" name="getResult" finished-at="2024-04-02T15:38:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:2, instance:com.java.bookTest.HomePageTestCases@323b36e0] output={null}]]]>
+                <![CDATA[[TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@6572421] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-02T15:38:54 IST" name="afterTest" finished-at="2024-04-02T15:38:56 IST" duration-ms="1925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- com.java.bookTest.HomePageTestCases -->
     </test> <!-- Test2 -->
-    <test started-at="2024-03-29T17:26:21 IST" name="Test3" finished-at="2024-03-29T17:26:39 IST" duration-ms="18227">
+    <test started-at="2024-04-02T15:38:56 IST" name="Test3" finished-at="2024-04-02T15:39:42 IST" duration-ms="46186">
       <class name="com.java.bookTest.GiftCardPageTestCases">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:25:33 IST" name="startReport" finished-at="2024-03-29T17:25:33 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:37:54 IST" name="startReport" finished-at="2024-04-02T15:37:54 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:21 IST" name="beforeTest" finished-at="2024-03-29T17:26:28 IST" duration-ms="7787" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:38:56 IST" name="beforeTest" finished-at="2024-04-02T15:39:13 IST" duration-ms="16568" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:28 IST" name="checkUrlTest" finished-at="2024-03-29T17:26:28 IST" duration-ms="9" status="PASS">
+        <test-method signature="checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:13 IST" name="checkUrlTest" finished-at="2024-04-02T15:39:13 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUrlTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:28 IST" name="getResult" finished-at="2024-03-29T17:26:28 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:13 IST" name="takeScreenShot" finished-at="2024-04-02T15:39:13 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:13 IST" name="getResult" finished-at="2024-04-02T15:39:13 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkUrlTest status=SUCCESS method=GiftCardPageTestCases.checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb] output={null}]]]>
+                <![CDATA[[TestResult name=checkUrlTest status=SUCCESS method=GiftCardPageTestCases.checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:28 IST" name="checkClickGiftCardTest" finished-at="2024-03-29T17:26:31 IST" duration-ms="2999" status="PASS">
+        <test-method signature="checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:13 IST" name="checkClickGiftCardTest" finished-at="2024-04-02T15:39:31 IST" duration-ms="18051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkClickGiftCardTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:31 IST" name="getResult" finished-at="2024-03-29T17:26:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:31 IST" name="takeScreenShot" finished-at="2024-04-02T15:39:32 IST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:32 IST" name="getResult" finished-at="2024-04-02T15:39:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkClickGiftCardTest status=SUCCESS method=GiftCardPageTestCases.checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb] output={null}]]]>
+                <![CDATA[[TestResult name=checkClickGiftCardTest status=SUCCESS method=GiftCardPageTestCases.checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:31 IST" name="OccasionHandleTest" finished-at="2024-03-29T17:26:32 IST" duration-ms="479" status="PASS">
+        <test-method signature="OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:32 IST" name="OccasionHandleTest" finished-at="2024-04-02T15:39:32 IST" duration-ms="427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OccasionHandleTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:32 IST" name="getResult" finished-at="2024-03-29T17:26:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:32 IST" name="takeScreenShot" finished-at="2024-04-02T15:39:32 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:32 IST" name="getResult" finished-at="2024-04-02T15:39:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OccasionHandleTest status=SUCCESS method=GiftCardPageTestCases.OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb] output={null}]]]>
+                <![CDATA[[TestResult name=OccasionHandleTest status=SUCCESS method=GiftCardPageTestCases.OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:32 IST" name="AmountHandlerTest" finished-at="2024-03-29T17:26:32 IST" duration-ms="272" status="PASS">
+        <test-method signature="AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:32 IST" name="AmountHandlerTest" finished-at="2024-04-02T15:39:32 IST" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmountHandlerTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:32 IST" name="getResult" finished-at="2024-03-29T17:26:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:32 IST" name="takeScreenShot" finished-at="2024-04-02T15:39:33 IST" duration-ms="241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:33 IST" name="getResult" finished-at="2024-04-02T15:39:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AmountHandlerTest status=SUCCESS method=GiftCardPageTestCases.AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb] output={null}]]]>
+                <![CDATA[[TestResult name=AmountHandlerTest status=SUCCESS method=GiftCardPageTestCases.AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:32 IST" name="DropDownHandlerTest" finished-at="2024-03-29T17:26:33 IST" duration-ms="675" status="PASS">
+        <test-method signature="DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:33 IST" name="DropDownHandlerTest" finished-at="2024-04-02T15:39:33 IST" duration-ms="570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropDownHandlerTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:33 IST" name="getResult" finished-at="2024-03-29T17:26:33 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:33 IST" name="takeScreenShot" finished-at="2024-04-02T15:39:34 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:34 IST" name="getResult" finished-at="2024-04-02T15:39:34 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DropDownHandlerTest status=SUCCESS method=GiftCardPageTestCases.DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb] output={null}]]]>
+                <![CDATA[[TestResult name=DropDownHandlerTest status=SUCCESS method=GiftCardPageTestCases.DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:33 IST" name="ButtonHandleTest" finished-at="2024-03-29T17:26:33 IST" duration-ms="159" status="PASS">
+        <test-method signature="ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:34 IST" name="ButtonHandleTest" finished-at="2024-04-02T15:39:34 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ButtonHandleTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:33 IST" name="getResult" finished-at="2024-03-29T17:26:33 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:34 IST" name="takeScreenShot" finished-at="2024-04-02T15:39:34 IST" duration-ms="287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:34 IST" name="getResult" finished-at="2024-04-02T15:39:34 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ButtonHandleTest status=SUCCESS method=GiftCardPageTestCases.ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb] output={null}]]]>
+                <![CDATA[[TestResult name=ButtonHandleTest status=SUCCESS method=GiftCardPageTestCases.ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="enterFormDetailsTest()[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:33 IST" name="enterFormDetailsTest" finished-at="2024-03-29T17:26:37 IST" duration-ms="3838" status="PASS">
+        <test-method signature="enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:35 IST" name="enterFormDetailsTest" data-provider="enterFormDetailsTest" finished-at="2024-04-02T15:39:39 IST" duration-ms="3887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shreya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shreya1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9.876543211E9]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chotu]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chotu@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.876543212E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[park square]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[700009.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFormDetailsTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:37 IST" name="getResult" finished-at="2024-03-29T17:26:37 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:39 IST" name="takeScreenShot" finished-at="2024-04-02T15:39:39 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:39 IST" name="getResult" finished-at="2024-04-02T15:39:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterFormDetailsTest status=SUCCESS method=GiftCardPageTestCases.enterFormDetailsTest()[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb] output={null}]]]>
+                <![CDATA[[TestResult name=enterFormDetailsTest status=SUCCESS method=GiftCardPageTestCases.enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:37 IST" name="afterTest" finished-at="2024-03-29T17:26:39 IST" duration-ms="1984" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:39 IST" name="afterTest" finished-at="2024-04-02T15:39:42 IST" duration-ms="2846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@6b927fb]" started-at="2024-03-29T17:26:39 IST" name="tearDown" finished-at="2024-03-29T17:26:39 IST" duration-ms="285" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-02T15:39:42 IST" name="tearDown" finished-at="2024-04-02T15:39:43 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

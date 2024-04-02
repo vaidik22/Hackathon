@@ -68,6 +68,7 @@ public class HomePageTestCases extends reportGenerator {
 
 	}
 
+
 	@AfterTest
 	public void afterTest() {
 		driver.quit();

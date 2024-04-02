@@ -5,11 +5,12 @@
     <classes>
       <class name="com.java.bookTest.ProductPageTestCases">
         <methods>
-          <include name="ExcludeOutOfStockTest"/>
-          <include name="PriceSliderTest"/>
+          <include name="listOfProductsTest"/>
           <include name="tearDown"/>
           <include name="afterTest"/>
           <include name="startReport"/>
+          <include name="takeScreenShot"/>
+          <include name="popupTest"/>
           <include name="beforeTest"/>
           <include name="getResult"/>
         </methods>

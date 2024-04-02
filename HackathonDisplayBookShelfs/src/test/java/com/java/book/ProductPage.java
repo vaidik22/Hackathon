@@ -47,8 +47,9 @@ public class ProductPage extends basePage{
 		super(driver);
 	}
 
-	public void Popup() {
+	public void Popup() throws InterruptedException {
 		popup = driver.findElement(popup1);
+		Thread.sleep(5000);
 		popup.click();
  
 	}
@@ -56,6 +57,7 @@ public class ProductPage extends basePage{
 	public void PriceSlider() throws InterruptedException {
  
 		priceElement = driver.findElement(priceElement1);
+		Thread.sleep(3000);
 		jse.executeScript("arguments[0].style.display = 'block'", priceElement);
 		Thread.sleep(3000);
 		 

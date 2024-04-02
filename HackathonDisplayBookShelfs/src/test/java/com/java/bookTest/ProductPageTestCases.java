@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.java.book.HomePage;
 import com.java.book.ProductPage;
 
+import utilities.ScreenShot;
 import utilities.reportGenerator;
 
 import org.testng.annotations.BeforeTest;
@@ -17,12 +18,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 
 public class ProductPageTestCases extends reportGenerator {
 	WebDriver driver;
 	HomePage page;
 	ProductPage page2;
+	ScreenShot ss;
+	int num =1;
 
 	@Test(priority = 1)
 	public void checkUrl() {
@@ -43,7 +47,7 @@ public class ProductPageTestCases extends reportGenerator {
 	}
 
 	@Test(priority = 3)
-	public void popupTest() {
+	public void popupTest() throws InterruptedException {
 		test = extent.startTest("test3");
 		page2 = new ProductPage(driver);
 		page2.Popup();
@@ -97,6 +101,7 @@ public class ProductPageTestCases extends reportGenerator {
 	public void listOfProductsTest() throws InterruptedException {
 		test = extent.startTest("test6");
 		page2 = new ProductPage(driver);
+		Thread.sleep(2000);
 		List<String> L2 =page2.listOfProducts();
 		boolean flag = true;
 		if(L2.isEmpty())
@@ -116,6 +121,12 @@ public class ProductPageTestCases extends reportGenerator {
 		Thread.sleep(2000);
 
 	}
+	 @AfterMethod
+	  public void takeScreenShot() throws Exception{
+		  String name  = "GiftCardPageSS" + num++;
+		  ss = new ScreenShot();
+		  ss.takeScreenShot(driver, name);
+	  }
 
 	@AfterTest
 	public void afterTest() {
