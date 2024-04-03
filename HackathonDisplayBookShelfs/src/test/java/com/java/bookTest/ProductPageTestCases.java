@@ -9,6 +9,7 @@ import utilities.ScreenShot;
 import utilities.reportGenerator;
 
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -110,20 +112,27 @@ public class ProductPageTestCases extends reportGenerator {
 	}
 
 	@BeforeTest
-	public void beforeTest() throws InterruptedException {
-		driver = new ChromeDriver();
+	  @Parameters("browser")
+		public void beforeTest(String browser) throws InterruptedException {
+			
+		  if(browser.equalsIgnoreCase("chrome")) {
+		  driver = new ChromeDriver();
+		  }
+		  else if(browser.equalsIgnoreCase("edge")){
+			  driver = new EdgeDriver();
+		  }
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		driver.get("https://urbanladder.com/");
+			driver.get("https://urbanladder.com/");
 
-		driver.manage().window().maximize();
-		Thread.sleep(2000);
+			driver.manage().window().maximize();
+			Thread.sleep(2000);
 
-	}
+		}
 	 @AfterMethod
 	  public void takeScreenShot() throws Exception{
-		  String name  = "GiftCardPageSS" + num++;
+		  String name  = "ProductPageSS" + num++;
 		  ss = new ScreenShot();
 		  ss.takeScreenShot(driver, name);
 	  }

@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test1">
+<suite name="Suite"  >
+<test thread-count="5" name="ChromeTest1">
+<parameter name="os" value="Windows" /> 
+<parameter name="browser" value="chrome" />
     <classes>
       <class name="com.java.bookTest.ProductPageTestCases"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test2">
+ <test thread-count="5" name="ChromeTest2">
+<parameter name="os" value="Windows" /> 
+<parameter name="browser" value="chrome" />
     <classes>
       <class name="com.java.bookTest.HomePageTestCases"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test3">
+ <test thread-count="5" name="ChromeTest3">
+<parameter name="os" value="Windows" /> 
+<parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.java.bookTest.GiftCardPageTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+<test thread-count="5" name="EdgeTest1">
+<parameter name="os" value="Edge" />
+<parameter name="browser" value="edge" />
+    <classes>
+      <class name="com.java.bookTest.ProductPageTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+<test thread-count="5" name="EdgeTest2">
+<parameter name="os" value="Edge" />
+<parameter name="browser" value="edge" />
+    <classes>
+      <class name="com.java.bookTest.HomePageTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+<test thread-count="5" name="EdgeTest3">
+<parameter name="os" value="Edge" />
+<parameter name="browser" value="edge" />
     <classes>
       <class name="com.java.bookTest.GiftCardPageTestCases"/>
     </classes>

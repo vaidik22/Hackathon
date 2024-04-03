@@ -8,11 +8,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.java.book.GiftCardPage;
@@ -130,8 +132,15 @@ public class GiftCardPageTestCases extends reportGenerator {
 	}
 	
   @BeforeTest
-	public void beforeTest() throws InterruptedException {
-		driver = new ChromeDriver();
+  @Parameters("browser")
+	public void beforeTest(String browser) throws InterruptedException {
+		
+	  if(browser.equalsIgnoreCase("chrome")) {
+	  driver = new ChromeDriver();
+	  }
+	  else if(browser.equalsIgnoreCase("edge")){
+		  driver = new EdgeDriver();
+	  }
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
