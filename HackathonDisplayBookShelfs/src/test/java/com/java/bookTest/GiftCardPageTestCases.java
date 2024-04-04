@@ -32,13 +32,13 @@ public class GiftCardPageTestCases extends reportGenerator {
 	int num =1;
 	@Test(priority = 1)
 	public void checkUrlTest() {
-		test = extent.startTest("test10");
+		test = extent.startTest("test11");
 		String url = driver.getCurrentUrl();
 		Assert.assertEquals(url, "https://www.urbanladder.com/");
 	}
 	@Test(priority=2)
 	public void checkClickGiftCardTest() {
-		test = extent.startTest("test11");
+		test = extent.startTest("test12");
 
 		Boolean clickBook = driver.findElement(By.xpath("//a[@href='/gift-cards?src=g_footer']")).isDisplayed();
 		Assert.assertTrue(clickBook);
@@ -48,7 +48,7 @@ public class GiftCardPageTestCases extends reportGenerator {
 
 	@Test(priority=3)
 	public void OccasionHandleTest() {
-		test = extent.startTest("test12");
+		test = extent.startTest("test13");
 		giftCardPage = new GiftCardPage(driver);
 		giftCardPage.scrollHandleToHeading1();
 		giftCardPage.birthdayCardHover();
@@ -59,7 +59,7 @@ public class GiftCardPageTestCases extends reportGenerator {
 	
 	@Test(priority=4)
 	public void AmountHandlerTest() {
-		test = extent.startTest("test13");
+		test = extent.startTest("test14");
 
 		giftCardPage = new GiftCardPage(driver);
 		Boolean amount = driver.findElement(By.xpath("//*[@class=\"HuPJS\"][1]")).isDisplayed();
@@ -70,7 +70,7 @@ public class GiftCardPageTestCases extends reportGenerator {
 	
 	@Test(priority=5)
 	public void DropDownHandlerTest() {
-		test = extent.startTest("test14");
+		test = extent.startTest("test15");
 		
 		giftCardPage = new GiftCardPage(driver);
 		giftCardPage.DropDownHandler(2,2);
@@ -89,7 +89,7 @@ public class GiftCardPageTestCases extends reportGenerator {
 	}
 	@Test(priority=6)
 	public void ButtonHandleTest() {
-		test = extent.startTest("test15");
+		test = extent.startTest("test16");
 		Boolean select = driver.findElement(By.xpath("//*[contains(text(),\"Next\")][@type=\"button\"]")).isEnabled();
 		Assert.assertTrue(select);
 		giftCardPage = new GiftCardPage(driver);

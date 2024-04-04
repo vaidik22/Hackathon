@@ -1,353 +1,372 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="34" passed="34" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-03T14:30:22 IST" name="Suite" finished-at="2024-04-03T14:34:32 IST" duration-ms="249976">
+  <suite started-at="2024-04-04T09:50:00 IST" name="Suite" finished-at="2024-04-04T09:53:02 IST" duration-ms="181830">
     <groups>
       <group name="smoketest">
-        <method signature="HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@6572421]" name="checkTitle" class="com.java.bookTest.HomePageTestCases"/>
-        <method signature="HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@6572421]" name="checkUrl" class="com.java.bookTest.HomePageTestCases"/>
+        <method signature="HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" name="checkTitle" class="com.java.bookTest.HomePageTestCases"/>
+        <method signature="HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" name="checkUrl" class="com.java.bookTest.HomePageTestCases"/>
+        <method signature="HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" name="checkTitle" class="com.java.bookTest.HomePageTestCases"/>
+        <method signature="HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" name="checkUrl" class="com.java.bookTest.HomePageTestCases"/>
       </group> <!-- smoketest -->
     </groups>
-    <test started-at="2024-04-03T14:30:22 IST" name="Test1" finished-at="2024-04-03T14:32:22 IST" duration-ms="119973">
+    <test started-at="2024-04-04T09:50:00 IST" name="ChromeTest1" finished-at="2024-04-04T09:50:47 IST" duration-ms="46517">
       <class name="com.java.bookTest.ProductPageTestCases">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:30:22 IST" name="beforeTest" finished-at="2024-04-03T14:31:25 IST" duration-ms="63309" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:00 IST" name="beforeTest" finished-at="2024-04-04T09:50:14 IST" duration-ms="13838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:25 IST" name="checkUrl" finished-at="2024-04-03T14:31:25 IST" duration-ms="45" status="PASS">
+        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:14 IST" name="checkUrl" finished-at="2024-04-04T09:50:14 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUrl -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:25 IST" name="takeScreenShot" finished-at="2024-04-03T14:31:26 IST" duration-ms="368" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:14 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:14 IST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:26 IST" name="getResult" finished-at="2024-04-03T14:31:26 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:14 IST" name="getResult" finished-at="2024-04-04T09:50:14 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=ProductPageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=ProductPageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@393671df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:26 IST" name="clickBookShelfTest" finished-at="2024-04-03T14:31:50 IST" duration-ms="24482" status="PASS">
+        <test-method signature="clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:14 IST" name="clickBookShelfTest" finished-at="2024-04-04T09:50:17 IST" duration-ms="2092" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickBookShelfTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:50 IST" name="takeScreenShot" finished-at="2024-04-03T14:31:51 IST" duration-ms="758" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:17 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:17 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:51 IST" name="getResult" finished-at="2024-04-03T14:31:51 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:17 IST" name="getResult" finished-at="2024-04-04T09:50:17 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickBookShelfTest status=SUCCESS method=ProductPageTestCases.clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=clickBookShelfTest status=SUCCESS method=ProductPageTestCases.clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@393671df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:51 IST" name="popupTest" finished-at="2024-04-03T14:31:56 IST" duration-ms="5194" status="PASS">
+        <test-method signature="popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:17 IST" name="popupTest" finished-at="2024-04-04T09:50:22 IST" duration-ms="5210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- popupTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:56 IST" name="takeScreenShot" finished-at="2024-04-03T14:31:57 IST" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:22 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:23 IST" duration-ms="315" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:57 IST" name="getResult" finished-at="2024-04-03T14:31:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:23 IST" name="getResult" finished-at="2024-04-04T09:50:23 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=popupTest status=SUCCESS method=ProductPageTestCases.popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=popupTest status=SUCCESS method=ProductPageTestCases.popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@393671df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:31:57 IST" name="PriceSliderTest" finished-at="2024-04-03T14:32:13 IST" duration-ms="16437" status="PASS">
+        <test-method signature="PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:23 IST" name="PriceSliderTest" finished-at="2024-04-04T09:50:37 IST" duration-ms="13935" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PriceSliderTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:13 IST" name="takeScreenShot" finished-at="2024-04-03T14:32:13 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:37 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:37 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:13 IST" name="getResult" finished-at="2024-04-03T14:32:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:37 IST" name="getResult" finished-at="2024-04-04T09:50:37 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PriceSliderTest status=SUCCESS method=ProductPageTestCases.PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=PriceSliderTest status=SUCCESS method=ProductPageTestCases.PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@393671df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:13 IST" name="StorageTypeTest" finished-at="2024-04-03T14:32:14 IST" duration-ms="342" status="PASS">
+        <test-method signature="StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:37 IST" name="StorageTypeTest" finished-at="2024-04-04T09:50:37 IST" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StorageTypeTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:14 IST" name="takeScreenShot" finished-at="2024-04-03T14:32:14 IST" duration-ms="201" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:37 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:38 IST" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:14 IST" name="getResult" finished-at="2024-04-03T14:32:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:38 IST" name="getResult" finished-at="2024-04-04T09:50:38 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=StorageTypeTest status=SUCCESS method=ProductPageTestCases.StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=StorageTypeTest status=SUCCESS method=ProductPageTestCases.StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@393671df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:14 IST" name="ExcludeOutOfStockTest" finished-at="2024-04-03T14:32:14 IST" duration-ms="177" status="PASS">
+        <test-method signature="ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:38 IST" name="ExcludeOutOfStockTest" finished-at="2024-04-04T09:50:38 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExcludeOutOfStockTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:14 IST" name="takeScreenShot" finished-at="2024-04-03T14:32:14 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:38 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:38 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:14 IST" name="getResult" finished-at="2024-04-03T14:32:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:38 IST" name="getResult" finished-at="2024-04-04T09:50:38 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExcludeOutOfStockTest status=SUCCESS method=ProductPageTestCases.ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=ExcludeOutOfStockTest status=SUCCESS method=ProductPageTestCases.ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@393671df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:14 IST" name="listOfProductsTest" finished-at="2024-04-03T14:32:19 IST" duration-ms="4337" status="PASS">
+        <test-method signature="listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:38 IST" name="listOfProductsTest" finished-at="2024-04-04T09:50:42 IST" duration-ms="4320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listOfProductsTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:19 IST" name="takeScreenShot" finished-at="2024-04-03T14:32:19 IST" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:42 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:43 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:19 IST" name="getResult" finished-at="2024-04-03T14:32:19 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:43 IST" name="getResult" finished-at="2024-04-04T09:50:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=listOfProductsTest status=SUCCESS method=ProductPageTestCases.listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@5119fb47] output={null}]]]>
+                <![CDATA[[TestResult name=listOfProductsTest status=SUCCESS method=ProductPageTestCases.listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@393671df] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@5119fb47]" started-at="2024-04-03T14:32:19 IST" name="afterTest" finished-at="2024-04-03T14:32:22 IST" duration-ms="3053" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@393671df]" started-at="2024-04-04T09:50:43 IST" name="afterTest" finished-at="2024-04-04T09:50:47 IST" duration-ms="4135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.java.bookTest.ProductPageTestCases -->
-    </test> <!-- Test1 -->
-    <test started-at="2024-04-03T14:32:22 IST" name="Test2" finished-at="2024-04-03T14:33:10 IST" duration-ms="48320">
+    </test> <!-- ChromeTest1 -->
+    <test started-at="2024-04-04T09:50:47 IST" name="ChromeTest2" finished-at="2024-04-04T09:51:05 IST" duration-ms="18201">
       <class name="com.java.bookTest.HomePageTestCases">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:32:22 IST" name="beforeTest" finished-at="2024-04-03T14:33:00 IST" duration-ms="38399" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:47 IST" name="beforeTest" finished-at="2024-04-04T09:50:55 IST" duration-ms="8370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:00 IST" name="checkUrl" finished-at="2024-04-03T14:33:00 IST" duration-ms="13" status="PASS">
+        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:55 IST" name="checkUrl" finished-at="2024-04-04T09:50:55 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUrl -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:00 IST" name="takeScreenShot" finished-at="2024-04-03T14:33:01 IST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:55 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:55 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:01 IST" name="getResult" finished-at="2024-04-03T14:33:01 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:55 IST" name="getResult" finished-at="2024-04-04T09:50:55 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@6572421] output={null}]]]>
+                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@dd8ba08] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:01 IST" name="checkTitle" finished-at="2024-04-03T14:33:01 IST" duration-ms="11" status="PASS">
+        <test-method signature="checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:55 IST" name="checkTitle" finished-at="2024-04-04T09:50:55 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTitle -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:01 IST" name="takeScreenShot" finished-at="2024-04-03T14:33:01 IST" duration-ms="241" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:55 IST" name="takeScreenShot" finished-at="2024-04-04T09:50:56 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:01 IST" name="getResult" finished-at="2024-04-03T14:33:01 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:56 IST" name="getResult" finished-at="2024-04-04T09:50:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkTitle status=SUCCESS method=HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@6572421] output={null}]]]>
+                <![CDATA[[TestResult name=checkTitle status=SUCCESS method=HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@dd8ba08] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:01 IST" name="ExtractDeal" finished-at="2024-04-03T14:33:07 IST" duration-ms="6385" status="PASS">
+        <test-method signature="ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:50:56 IST" name="ExtractDeal" finished-at="2024-04-04T09:51:02 IST" duration-ms="6548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ExtractDeal -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:07 IST" name="takeScreenShot" finished-at="2024-04-03T14:33:08 IST" duration-ms="279" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:51:02 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:03 IST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:08 IST" name="getResult" finished-at="2024-04-03T14:33:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:51:03 IST" name="getResult" finished-at="2024-04-04T09:51:03 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@6572421] output={null}]]]>
+                <![CDATA[[TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@dd8ba08] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@6572421]" started-at="2024-04-03T14:33:08 IST" name="afterTest" finished-at="2024-04-03T14:33:10 IST" duration-ms="2740" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@dd8ba08]" started-at="2024-04-04T09:51:03 IST" name="afterTest" finished-at="2024-04-04T09:51:05 IST" duration-ms="2484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.java.bookTest.HomePageTestCases -->
-    </test> <!-- Test2 -->
-    <test started-at="2024-04-03T14:33:10 IST" name="Test3" finished-at="2024-04-03T14:34:32 IST" duration-ms="81621">
+    </test> <!-- ChromeTest2 -->
+    <test started-at="2024-04-04T09:51:05 IST" name="ChromeTest3" finished-at="2024-04-04T09:51:31 IST" duration-ms="26032">
       <class name="com.java.bookTest.GiftCardPageTestCases">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:30:22 IST" name="startReport" finished-at="2024-04-03T14:30:22 IST" duration-ms="361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:33:10 IST" name="beforeTest" finished-at="2024-04-03T14:33:47 IST" duration-ms="37212" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:05 IST" name="beforeTest" finished-at="2024-04-04T09:51:15 IST" duration-ms="9542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:33:48 IST" name="checkUrlTest" finished-at="2024-04-03T14:33:48 IST" duration-ms="24" status="PASS">
+        <test-method signature="checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:15 IST" name="checkUrlTest" finished-at="2024-04-04T09:51:15 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUrlTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:33:48 IST" name="takeScreenShot" finished-at="2024-04-03T14:33:48 IST" duration-ms="430" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:15 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:15 IST" duration-ms="486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:33:48 IST" name="getResult" finished-at="2024-04-03T14:33:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:15 IST" name="getResult" finished-at="2024-04-04T09:51:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkUrlTest status=SUCCESS method=GiftCardPageTestCases.checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
+                <![CDATA[[TestResult name=checkUrlTest status=SUCCESS method=GiftCardPageTestCases.checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:33:48 IST" name="checkClickGiftCardTest" finished-at="2024-04-03T14:34:20 IST" duration-ms="32156" status="PASS">
+        <test-method signature="checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:15 IST" name="checkClickGiftCardTest" finished-at="2024-04-04T09:51:20 IST" duration-ms="4828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkClickGiftCardTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:20 IST" name="takeScreenShot" finished-at="2024-04-03T14:34:21 IST" duration-ms="464" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:20 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:20 IST" duration-ms="352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:21 IST" name="getResult" finished-at="2024-04-03T14:34:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:20 IST" name="getResult" finished-at="2024-04-04T09:51:20 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkClickGiftCardTest status=SUCCESS method=GiftCardPageTestCases.checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
+                <![CDATA[[TestResult name=checkClickGiftCardTest status=SUCCESS method=GiftCardPageTestCases.checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:21 IST" name="OccasionHandleTest" finished-at="2024-04-03T14:34:21 IST" duration-ms="538" status="PASS">
+        <test-method signature="OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:20 IST" name="OccasionHandleTest" finished-at="2024-04-04T09:51:21 IST" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OccasionHandleTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:21 IST" name="takeScreenShot" finished-at="2024-04-03T14:34:21 IST" duration-ms="193" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:21 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:21 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:21 IST" name="getResult" finished-at="2024-04-03T14:34:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:21 IST" name="getResult" finished-at="2024-04-04T09:51:21 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=OccasionHandleTest status=SUCCESS method=GiftCardPageTestCases.OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
+                <![CDATA[[TestResult name=OccasionHandleTest status=SUCCESS method=GiftCardPageTestCases.OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:21 IST" name="AmountHandlerTest" finished-at="2024-04-03T14:34:21 IST" duration-ms="149" status="PASS">
+        <test-method signature="AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:21 IST" name="AmountHandlerTest" finished-at="2024-04-04T09:51:21 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AmountHandlerTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:21 IST" name="takeScreenShot" finished-at="2024-04-03T14:34:22 IST" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:21 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:21 IST" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:22 IST" name="getResult" finished-at="2024-04-03T14:34:22 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:21 IST" name="getResult" finished-at="2024-04-04T09:51:21 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AmountHandlerTest status=SUCCESS method=GiftCardPageTestCases.AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
+                <![CDATA[[TestResult name=AmountHandlerTest status=SUCCESS method=GiftCardPageTestCases.AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:22 IST" name="DropDownHandlerTest" finished-at="2024-04-03T14:34:22 IST" duration-ms="689" status="PASS">
+        <test-method signature="DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:21 IST" name="DropDownHandlerTest" finished-at="2024-04-04T09:51:22 IST" duration-ms="686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DropDownHandlerTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:22 IST" name="takeScreenShot" finished-at="2024-04-03T14:34:23 IST" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:22 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:22 IST" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:23 IST" name="getResult" finished-at="2024-04-03T14:34:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:22 IST" name="getResult" finished-at="2024-04-04T09:51:22 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=DropDownHandlerTest status=SUCCESS method=GiftCardPageTestCases.DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
+                <![CDATA[[TestResult name=DropDownHandlerTest status=SUCCESS method=GiftCardPageTestCases.DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:23 IST" name="ButtonHandleTest" finished-at="2024-04-03T14:34:23 IST" duration-ms="125" status="PASS">
+        <test-method signature="ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:22 IST" name="ButtonHandleTest" finished-at="2024-04-04T09:51:22 IST" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ButtonHandleTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:23 IST" name="takeScreenShot" finished-at="2024-04-03T14:34:23 IST" duration-ms="229" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:22 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:23 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:23 IST" name="getResult" finished-at="2024-04-03T14:34:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:23 IST" name="getResult" finished-at="2024-04-04T09:51:23 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ButtonHandleTest status=SUCCESS method=GiftCardPageTestCases.ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
+                <![CDATA[[TestResult name=ButtonHandleTest status=SUCCESS method=GiftCardPageTestCases.ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:25 IST" name="enterFormDetailsTest" data-provider="enterFormDetailsTest" finished-at="2024-04-03T14:34:29 IST" duration-ms="4012" status="PASS">
+        <test-method signature="enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:24 IST" name="enterFormDetailsTest" data-provider="enterFormDetailsTest" finished-at="2024-04-04T09:51:28 IST" duration-ms="3882" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -393,30 +412,456 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFormDetailsTest -->
-        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:29 IST" name="takeScreenShot" finished-at="2024-04-03T14:34:29 IST" duration-ms="216" status="PASS">
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:28 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:28 IST" duration-ms="529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShot -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:29 IST" name="getResult" finished-at="2024-04-03T14:34:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:28 IST" name="getResult" finished-at="2024-04-04T09:51:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=enterFormDetailsTest status=SUCCESS method=GiftCardPageTestCases.enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d] output={null}]]]>
+                <![CDATA[[TestResult name=enterFormDetailsTest status=SUCCESS method=GiftCardPageTestCases.enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:29 IST" name="afterTest" finished-at="2024-04-03T14:34:32 IST" duration-ms="3154" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@74fe5c40]" started-at="2024-04-04T09:51:28 IST" name="afterTest" finished-at="2024-04-04T09:51:31 IST" duration-ms="2606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@16d04d3d]" started-at="2024-04-03T14:34:32 IST" name="tearDown" finished-at="2024-04-03T14:34:32 IST" duration-ms="407" status="PASS">
+      </class> <!-- com.java.bookTest.GiftCardPageTestCases -->
+    </test> <!-- ChromeTest3 -->
+    <test started-at="2024-04-04T09:51:31 IST" name="EdgeTest1" finished-at="2024-04-04T09:52:16 IST" duration-ms="44818">
+      <class name="com.java.bookTest.ProductPageTestCases">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:31 IST" name="beforeTest" finished-at="2024-04-04T09:51:41 IST" duration-ms="9626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:41 IST" name="checkUrl" finished-at="2024-04-04T09:51:41 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUrl -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:41 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:41 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:41 IST" name="getResult" finished-at="2024-04-04T09:51:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=ProductPageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.ProductPageTestCases@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:41 IST" name="clickBookShelfTest" finished-at="2024-04-04T09:51:44 IST" duration-ms="3308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickBookShelfTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:44 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:45 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:45 IST" name="getResult" finished-at="2024-04-04T09:51:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickBookShelfTest status=SUCCESS method=ProductPageTestCases.clickBookShelfTest()[pri:2, instance:com.java.bookTest.ProductPageTestCases@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:45 IST" name="popupTest" finished-at="2024-04-04T09:51:50 IST" duration-ms="5450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- popupTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:50 IST" name="takeScreenShot" finished-at="2024-04-04T09:51:51 IST" duration-ms="835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:51 IST" name="getResult" finished-at="2024-04-04T09:51:51 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=popupTest status=SUCCESS method=ProductPageTestCases.popupTest()[pri:3, instance:com.java.bookTest.ProductPageTestCases@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:51:51 IST" name="PriceSliderTest" finished-at="2024-04-04T09:52:05 IST" duration-ms="13757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PriceSliderTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:05 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:05 IST" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:05 IST" name="getResult" finished-at="2024-04-04T09:52:05 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PriceSliderTest status=SUCCESS method=ProductPageTestCases.PriceSliderTest()[pri:4, instance:com.java.bookTest.ProductPageTestCases@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:05 IST" name="StorageTypeTest" finished-at="2024-04-04T09:52:06 IST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StorageTypeTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:06 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:06 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method signature="ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:06 IST" name="ExcludeOutOfStockTest" finished-at="2024-04-04T09:52:06 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExcludeOutOfStockTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:06 IST" name="getResult" finished-at="2024-04-04T09:52:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StorageTypeTest status=SUCCESS method=ProductPageTestCases.StorageTypeTest()[pri:5, instance:com.java.bookTest.ProductPageTestCases@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:06 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:06 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:06 IST" name="getResult" finished-at="2024-04-04T09:52:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ExcludeOutOfStockTest status=SUCCESS method=ProductPageTestCases.ExcludeOutOfStockTest()[pri:6, instance:com.java.bookTest.ProductPageTestCases@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:06 IST" name="listOfProductsTest" finished-at="2024-04-04T09:52:10 IST" duration-ms="4215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listOfProductsTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:10 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:11 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:11 IST" name="getResult" finished-at="2024-04-04T09:52:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=listOfProductsTest status=SUCCESS method=ProductPageTestCases.listOfProductsTest()[pri:7, instance:com.java.bookTest.ProductPageTestCases@77847718] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.ProductPageTestCases@77847718]" started-at="2024-04-04T09:52:11 IST" name="afterTest" finished-at="2024-04-04T09:52:16 IST" duration-ms="5100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.java.bookTest.ProductPageTestCases -->
+    </test> <!-- EdgeTest1 -->
+    <test started-at="2024-04-04T09:52:16 IST" name="EdgeTest2" finished-at="2024-04-04T09:52:38 IST" duration-ms="22159">
+      <class name="com.java.bookTest.HomePageTestCases">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:16 IST" name="beforeTest" finished-at="2024-04-04T09:52:26 IST" duration-ms="9685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:26 IST" name="checkUrl" finished-at="2024-04-04T09:52:26 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUrl -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:26 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:26 IST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:26 IST" name="getResult" finished-at="2024-04-04T09:52:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUrl status=SUCCESS method=HomePageTestCases.checkUrl()[pri:1, instance:com.java.bookTest.HomePageTestCases@5c33f1a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:26 IST" name="checkTitle" finished-at="2024-04-04T09:52:26 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:26 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:26 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:26 IST" name="getResult" finished-at="2024-04-04T09:52:26 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkTitle status=SUCCESS method=HomePageTestCases.checkTitle()[pri:2, instance:com.java.bookTest.HomePageTestCases@5c33f1a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:26 IST" name="ExtractDeal" finished-at="2024-04-04T09:52:33 IST" duration-ms="6719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtractDeal -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:33 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:33 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:33 IST" name="getResult" finished-at="2024-04-04T09:52:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:com.java.bookTest.HomePageTestCases@5c33f1a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.HomePageTestCases@5c33f1a9]" started-at="2024-04-04T09:52:33 IST" name="afterTest" finished-at="2024-04-04T09:52:38 IST" duration-ms="4801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.java.bookTest.HomePageTestCases -->
+    </test> <!-- EdgeTest2 -->
+    <test started-at="2024-04-04T09:52:38 IST" name="EdgeTest3" finished-at="2024-04-04T09:53:02 IST" duration-ms="23997">
+      <class name="com.java.bookTest.GiftCardPageTestCases">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:50:00 IST" name="startReport" finished-at="2024-04-04T09:50:00 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:38 IST" name="beforeTest" finished-at="2024-04-04T09:52:48 IST" duration-ms="10231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:48 IST" name="checkUrlTest" finished-at="2024-04-04T09:52:48 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUrlTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:48 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:49 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:49 IST" name="getResult" finished-at="2024-04-04T09:52:49 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkUrlTest status=SUCCESS method=GiftCardPageTestCases.checkUrlTest()[pri:1, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:49 IST" name="checkClickGiftCardTest" finished-at="2024-04-04T09:52:52 IST" duration-ms="3201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkClickGiftCardTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:52 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:52 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:52 IST" name="getResult" finished-at="2024-04-04T09:52:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkClickGiftCardTest status=SUCCESS method=GiftCardPageTestCases.checkClickGiftCardTest()[pri:2, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:52 IST" name="OccasionHandleTest" finished-at="2024-04-04T09:52:53 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OccasionHandleTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:53 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:53 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:53 IST" name="getResult" finished-at="2024-04-04T09:52:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OccasionHandleTest status=SUCCESS method=GiftCardPageTestCases.OccasionHandleTest()[pri:3, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:53 IST" name="AmountHandlerTest" finished-at="2024-04-04T09:52:53 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmountHandlerTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:53 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:53 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:53 IST" name="getResult" finished-at="2024-04-04T09:52:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AmountHandlerTest status=SUCCESS method=GiftCardPageTestCases.AmountHandlerTest()[pri:4, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:53 IST" name="DropDownHandlerTest" finished-at="2024-04-04T09:52:54 IST" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownHandlerTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:54 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:54 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:54 IST" name="getResult" finished-at="2024-04-04T09:52:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DropDownHandlerTest status=SUCCESS method=GiftCardPageTestCases.DropDownHandlerTest()[pri:5, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:54 IST" name="ButtonHandleTest" finished-at="2024-04-04T09:52:54 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ButtonHandleTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:54 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:54 IST" duration-ms="336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:54 IST" name="getResult" finished-at="2024-04-04T09:52:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ButtonHandleTest status=SUCCESS method=GiftCardPageTestCases.ButtonHandleTest()[pri:6, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:55 IST" name="enterFormDetailsTest" data-provider="enterFormDetailsTest" finished-at="2024-04-04T09:52:58 IST" duration-ms="3638" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shreya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[shreya1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9.876543211E9]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[chotu]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chotu@gmail.com]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[9.876543212E9]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[park square]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[700009.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFormDetailsTest -->
+        <test-method is-config="true" signature="takeScreenShot()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:58 IST" name="takeScreenShot" finished-at="2024-04-04T09:52:59 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShot -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:59 IST" name="getResult" finished-at="2024-04-04T09:52:59 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=enterFormDetailsTest status=SUCCESS method=GiftCardPageTestCases.enterFormDetailsTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:7, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:52:59 IST" name="afterTest" finished-at="2024-04-04T09:53:02 IST" duration-ms="3393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.bookTest.GiftCardPageTestCases@4ec4f3a0]" started-at="2024-04-04T09:53:02 IST" name="tearDown" finished-at="2024-04-04T09:53:02 IST" duration-ms="376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.java.bookTest.GiftCardPageTestCases -->
-    </test> <!-- Test3 -->
+    </test> <!-- EdgeTest3 -->
   </suite> <!-- Suite -->
 </testng-results>

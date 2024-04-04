@@ -52,7 +52,7 @@ public class HomePage extends basePage{
 
 		{
 
-			String x = driver.findElement(By.xpath("//li[@class='topnav_item dealzoneunit']//li["+ j +"]//span[1]")).getText();
+			String x = driver.findElement(By.xpath("//li[@class='topnav_item dealzoneunit']//li[1]//li[" + j + "]//span")).getText();
 
 //			System.out.println(x);
 
