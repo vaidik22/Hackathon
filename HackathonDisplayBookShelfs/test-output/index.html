@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">34 methods,   34 passed</span>
+                    <span class="method-stats">34 methods, 2 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.java.bookTest.ProductPageTestCases" class="method navigator-link" hash-for-method="ExcludeOutOfStockTest">ExcludeOutOfStockTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.java.bookTest.ProductPageTestCases" class="method navigator-link" hash-for-method="PriceSliderTest">PriceSliderTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -139,11 +158,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.java.bookTest.ProductPageTestCases" class="method navigator-link" hash-for-method="ExcludeOutOfStockTest">ExcludeOutOfStockTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.java.bookTest.HomePageTestCases" class="method navigator-link" hash-for-method="ExtractDeal">ExtractDeal</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -160,11 +174,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.java.bookTest.GiftCardPageTestCases" class="method navigator-link" hash-for-method="OccasionHandleTest">OccasionHandleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.java.bookTest.ProductPageTestCases" class="method navigator-link" hash-for-method="PriceSliderTest">PriceSliderTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -284,6 +293,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.java.bookTest.ProductPageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExcludeOutOfStockTest">
+                  </a> <!-- ExcludeOutOfStockTest -->
+                  <span class="method-name">ExcludeOutOfStockTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;filters[availability][]&quot; id=&quot;filters_availability_In_Stock_Only&quot; value=&quot;In Stock Only&quot;&gt; is not clickable at point (847, 289). Other element would receive the click: &lt;div id=&quot;block-overlay&quot; style=&quot;width: 1008px; height: 5205px;&quot;&gt;&lt;/div&gt;
+  (Session info: MicrosoftEdge=123.0.2420.65)
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [1c6aa5dfe453e7b697e227143d425adc, clickElement {id=f.D5708E2C194A6A4FAD9B05F2F96C1A83.d.15468B5DCC2CEA79AD7E580DB99861DF.e.176}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 123.0.2420.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:56124}, msedge: {msedgedriverVersion: 123.0.2420.65 (49b6a5859239..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56124/devtoo..., se:cdpVersion: 123.0.2420.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (1c6aa5dfe453e7b697e227143d425adc)] -&gt; id: filters_availability_In_Stock_Only]
+Session ID: 1c6aa5dfe453e7b697e227143d425adc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.java.book.ProductPage.ExcludeOutOfStock(ProductPage.java:84)
+	at com.java.bookTest.ProductPageTestCases.ExcludeOutOfStockTest(ProductPageTestCases.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PriceSliderTest">
+                  </a> <!-- PriceSliderTest -->
+                  <span class="method-name">PriceSliderTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.java.bookTest.ProductPageTestCases.PriceSliderTest(ProductPageTestCases.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -403,20 +462,6 @@
                   <a name="ExcludeOutOfStockTest">
                   </a> <!-- ExcludeOutOfStockTest -->
                   <span class="method-name">ExcludeOutOfStockTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="ExcludeOutOfStockTest">
-                  </a> <!-- ExcludeOutOfStockTest -->
-                  <span class="method-name">ExcludeOutOfStockTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="PriceSliderTest">
-                  </a> <!-- PriceSliderTest -->
-                  <span class="method-name">PriceSliderTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -666,125 +711,125 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(34);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PriceSliderTest')
-data.setCell(0, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(0, 3, 13935);
+data.setCell(0, 1, 'checkClickGiftCardTest')
+data.setCell(0, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(0, 3, 38993);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'PriceSliderTest')
-data.setCell(1, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(1, 3, 13757);
+data.setCell(1, 1, 'checkClickGiftCardTest')
+data.setCell(1, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(1, 3, 32294);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ExtractDeal')
-data.setCell(2, 2, 'com.java.bookTest.HomePageTestCases')
-data.setCell(2, 3, 6719);
+data.setCell(2, 1, 'PriceSliderTest')
+data.setCell(2, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(2, 3, 13811);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'ExtractDeal')
-data.setCell(3, 2, 'com.java.bookTest.HomePageTestCases')
-data.setCell(3, 3, 6548);
+data.setCell(3, 1, 'PriceSliderTest')
+data.setCell(3, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(3, 3, 13708);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'popupTest')
+data.setCell(4, 1, 'clickBookShelfTest')
 data.setCell(4, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(4, 3, 5450);
+data.setCell(4, 3, 8918);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'popupTest')
-data.setCell(5, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(5, 3, 5210);
+data.setCell(5, 1, 'ExtractDeal')
+data.setCell(5, 2, 'com.java.bookTest.HomePageTestCases')
+data.setCell(5, 3, 6453);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkClickGiftCardTest')
-data.setCell(6, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(6, 3, 4828);
+data.setCell(6, 1, 'ExtractDeal')
+data.setCell(6, 2, 'com.java.bookTest.HomePageTestCases')
+data.setCell(6, 3, 6350);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'listOfProductsTest')
+data.setCell(7, 1, 'popupTest')
 data.setCell(7, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(7, 3, 4320);
+data.setCell(7, 3, 5445);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'listOfProductsTest')
+data.setCell(8, 1, 'popupTest')
 data.setCell(8, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(8, 3, 4215);
+data.setCell(8, 3, 5242);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'enterFormDetailsTest')
-data.setCell(9, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(9, 3, 3882);
+data.setCell(9, 1, 'clickBookShelfTest')
+data.setCell(9, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(9, 3, 4871);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'enterFormDetailsTest')
-data.setCell(10, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(10, 3, 3638);
+data.setCell(10, 1, 'listOfProductsTest')
+data.setCell(10, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(10, 3, 4246);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'clickBookShelfTest')
+data.setCell(11, 1, 'listOfProductsTest')
 data.setCell(11, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(11, 3, 3308);
+data.setCell(11, 3, 4204);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'checkClickGiftCardTest')
+data.setCell(12, 1, 'enterFormDetailsTest')
 data.setCell(12, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(12, 3, 3201);
+data.setCell(12, 3, 3897);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'clickBookShelfTest')
-data.setCell(13, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(13, 3, 2092);
+data.setCell(13, 1, 'enterFormDetailsTest')
+data.setCell(13, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(13, 3, 3650);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'DropDownHandlerTest')
-data.setCell(14, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(14, 3, 686);
+data.setCell(14, 1, 'ExcludeOutOfStockTest')
+data.setCell(14, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(14, 3, 1139);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'DropDownHandlerTest')
 data.setCell(15, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(15, 3, 678);
+data.setCell(15, 3, 779);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'OccasionHandleTest')
+data.setCell(16, 1, 'DropDownHandlerTest')
 data.setCell(16, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(16, 3, 460);
+data.setCell(16, 3, 506);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'OccasionHandleTest')
-data.setCell(17, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(17, 3, 459);
+data.setCell(17, 1, 'StorageTypeTest')
+data.setCell(17, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(17, 3, 404);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'StorageTypeTest')
-data.setCell(18, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(18, 3, 398);
+data.setCell(18, 1, 'OccasionHandleTest')
+data.setCell(18, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(18, 3, 352);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'StorageTypeTest')
-data.setCell(19, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(19, 3, 358);
+data.setCell(19, 1, 'OccasionHandleTest')
+data.setCell(19, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(19, 3, 346);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'ExcludeOutOfStockTest')
+data.setCell(20, 1, 'StorageTypeTest')
 data.setCell(20, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(20, 3, 233);
+data.setCell(20, 3, 310);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'AmountHandlerTest')
-data.setCell(21, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(21, 3, 192);
+data.setCell(21, 1, 'checkUrl')
+data.setCell(21, 2, 'com.java.bookTest.HomePageTestCases')
+data.setCell(21, 3, 259);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'ExcludeOutOfStockTest')
-data.setCell(22, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(22, 3, 191);
+data.setCell(22, 1, 'AmountHandlerTest')
+data.setCell(22, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(22, 3, 219);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'AmountHandlerTest')
-data.setCell(23, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(23, 3, 136);
+data.setCell(23, 1, 'ExcludeOutOfStockTest')
+data.setCell(23, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(23, 3, 188);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'ButtonHandleTest')
 data.setCell(24, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(24, 3, 118);
+data.setCell(24, 3, 167);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'ButtonHandleTest')
+data.setCell(25, 1, 'AmountHandlerTest')
 data.setCell(25, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(25, 3, 108);
+data.setCell(25, 3, 142);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'checkUrl')
-data.setCell(26, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(26, 3, 29);
+data.setCell(26, 1, 'ButtonHandleTest')
+data.setCell(26, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(26, 3, 117);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'checkUrl')
-data.setCell(27, 2, 'com.java.bookTest.ProductPageTestCases')
-data.setCell(27, 3, 26);
+data.setCell(27, 1, 'checkUrlTest')
+data.setCell(27, 2, 'com.java.bookTest.GiftCardPageTestCases')
+data.setCell(27, 3, 85);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'checkUrl')
-data.setCell(28, 2, 'com.java.bookTest.HomePageTestCases')
-data.setCell(28, 3, 21);
+data.setCell(28, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(28, 3, 41);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'checkUrlTest')
-data.setCell(29, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(29, 3, 20);
+data.setCell(29, 1, 'checkUrl')
+data.setCell(29, 2, 'com.java.bookTest.ProductPageTestCases')
+data.setCell(29, 3, 36);
 data.setCell(30, 0, 30)
 data.setCell(30, 1, 'checkTitle')
 data.setCell(30, 2, 'com.java.bookTest.HomePageTestCases')
@@ -792,20 +837,20 @@ data.setCell(30, 3, 18);
 data.setCell(31, 0, 31)
 data.setCell(31, 1, 'checkUrl')
 data.setCell(31, 2, 'com.java.bookTest.HomePageTestCases')
-data.setCell(31, 3, 15);
+data.setCell(31, 3, 14);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'checkUrlTest')
 data.setCell(32, 2, 'com.java.bookTest.GiftCardPageTestCases')
-data.setCell(32, 3, 14);
+data.setCell(32, 3, 13);
 data.setCell(33, 0, 33)
 data.setCell(33, 1, 'checkTitle')
 data.setCell(33, 2, 'com.java.bookTest.HomePageTestCases')
-data.setCell(33, 3, 10);
+data.setCell(33, 3, 11);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -841,478 +886,482 @@ return data;
               <div class="chronological-class-name">com.java.bookTest.ProductPageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">386 ms</span>
+                <span class="method-start">266 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkUrl</span>
-                <span class="method-start">14258 ms</span>
+                <span class="method-start">34835 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">14287 ms</span>
+                <span class="method-start">34876 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkUrl status=SUCCESS method=ProductPageTestCases.checkUrl()[pri:1, instance:com....)</span>
-                <span class="method-start">14608 ms</span>
+                <span class="method-start">35273 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clickBookShelfTest</span>
-                <span class="method-start">14614 ms</span>
+                <span class="method-start">35280 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">16708 ms</span>
+                <span class="method-start">44200 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=clickBookShelfTest status=SUCCESS method=ProductPageTestCases.clickBookShelfTest()[...)</span>
-                <span class="method-start">17401 ms</span>
+                <span class="method-start">44499 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">popupTest</span>
-                <span class="method-start">17402 ms</span>
+                <span class="method-start">44500 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">22614 ms</span>
+                <span class="method-start">49743 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=popupTest status=SUCCESS method=ProductPageTestCases.popupTest()[pri:3, instance:co...)</span>
-                <span class="method-start">22929 ms</span>
+                <span class="method-start">50072 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">PriceSliderTest</span>
-                <span class="method-start">22931 ms</span>
+                <span class="method-start">50073 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">36867 ms</span>
+                <span class="method-start">63885 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=PriceSliderTest status=SUCCESS method=ProductPageTestCases.PriceSliderTest()[pri:4,...)</span>
-                <span class="method-start">37079 ms</span>
+                <span class="method-start">64155 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">StorageTypeTest</span>
-                <span class="method-start">37080 ms</span>
+                <span class="method-start">64156 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">37480 ms</span>
+                <span class="method-start">64561 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=StorageTypeTest status=SUCCESS method=ProductPageTestCases.StorageTypeTest()[pri:5,...)</span>
-                <span class="method-start">37716 ms</span>
+                <span class="method-start">64742 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ExcludeOutOfStockTest</span>
-                <span class="method-start">37717 ms</span>
+                <span class="method-start">64743 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">37952 ms</span>
+                <span class="method-start">64931 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=ExcludeOutOfStockTest status=SUCCESS method=ProductPageTestCases.ExcludeOutOfStockT...)</span>
-                <span class="method-start">38200 ms</span>
+                <span class="method-start">65111 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">listOfProductsTest</span>
-                <span class="method-start">38201 ms</span>
+                <span class="method-start">65112 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">42523 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=listOfProductsTest status=SUCCESS method=ProductPageTestCases.listOfProductsTest()[...)</span>
-                <span class="method-start">42762 ms</span>
+                <span class="method-start">69360 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">42764 ms</span>
+                <span class="method-start">69519 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=listOfProductsTest status=SUCCESS method=ProductPageTestCases.listOfProductsTest()[...)</span>
+                <span class="method-start">69519 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.java.bookTest.HomePageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">46960 ms</span>
+                <span class="method-start">72453 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkUrl</span>
-                <span class="method-start">55331 ms</span>
+                <span class="method-start">83214 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">55348 ms</span>
+                <span class="method-start">83229 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkUrl status=SUCCESS method=HomePageTestCases.checkUrl()[pri:1, instance:com.jav...)</span>
-                <span class="method-start">55621 ms</span>
+                <span class="method-start">83532 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">checkTitle</span>
-                <span class="method-start">55622 ms</span>
+                <span class="method-start">83533 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">55633 ms</span>
+                <span class="method-start">83545 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkTitle status=SUCCESS method=HomePageTestCases.checkTitle()[pri:2, instance:com...)</span>
-                <span class="method-start">55885 ms</span>
+                <span class="method-start">83823 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ExtractDeal</span>
-                <span class="method-start">55886 ms</span>
+                <span class="method-start">83824 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">62435 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:c...)</span>
-                <span class="method-start">62674 ms</span>
+                <span class="method-start">90278 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">62675 ms</span>
+                <span class="method-start">90617 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:c...)</span>
+                <span class="method-start">90617 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.java.bookTest.GiftCardPageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">65171 ms</span>
+                <span class="method-start">92687 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkUrlTest</span>
-                <span class="method-start">74715 ms</span>
+                <span class="method-start">125466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">74737 ms</span>
+                <span class="method-start">125480 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkUrlTest status=SUCCESS method=GiftCardPageTestCases.checkUrlTest()[pri:1, inst...)</span>
-                <span class="method-start">75223 ms</span>
+                <span class="method-start">125836 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">checkClickGiftCardTest</span>
-                <span class="method-start">75224 ms</span>
+                <span class="method-start">125837 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">80053 ms</span>
+                <span class="method-start">164832 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkClickGiftCardTest status=SUCCESS method=GiftCardPageTestCases.checkClickGiftCa...)</span>
-                <span class="method-start">80405 ms</span>
+                <span class="method-start">165137 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">OccasionHandleTest</span>
-                <span class="method-start">80407 ms</span>
+                <span class="method-start">165138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">80870 ms</span>
+                <span class="method-start">165485 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=OccasionHandleTest status=SUCCESS method=GiftCardPageTestCases.OccasionHandleTest()...)</span>
-                <span class="method-start">81097 ms</span>
+                <span class="method-start">165795 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">AmountHandlerTest</span>
-                <span class="method-start">81098 ms</span>
+                <span class="method-start">165797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">81292 ms</span>
+                <span class="method-start">166018 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=AmountHandlerTest status=SUCCESS method=GiftCardPageTestCases.AmountHandlerTest()[p...)</span>
-                <span class="method-start">81541 ms</span>
+                <span class="method-start">166298 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">DropDownHandlerTest</span>
-                <span class="method-start">81543 ms</span>
+                <span class="method-start">166299 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">82231 ms</span>
+                <span class="method-start">167079 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=DropDownHandlerTest status=SUCCESS method=GiftCardPageTestCases.DropDownHandlerTest...)</span>
-                <span class="method-start">82427 ms</span>
+                <span class="method-start">167300 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ButtonHandleTest</span>
-                <span class="method-start">82428 ms</span>
+                <span class="method-start">167301 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">82547 ms</span>
+                <span class="method-start">167473 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=ButtonHandleTest status=SUCCESS method=GiftCardPageTestCases.ButtonHandleTest()[pri...)</span>
-                <span class="method-start">82780 ms</span>
+                <span class="method-start">167748 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterFormDetailsTest(shreya, shreya1, 9.876543211E9, chotu, chotu@gmail.com, 9.876543212E9, park square, 700009.0)</span>
-                <span class="method-start">84181 ms</span>
+                <span class="method-start">169247 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">88065 ms</span>
+                <span class="method-start">173145 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=enterFormDetailsTest status=SUCCESS method=GiftCardPageTestCases.enterFormDetailsTe...)</span>
-                <span class="method-start">88594 ms</span>
+                <span class="method-start">173322 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">88596 ms</span>
+                <span class="method-start">173323 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.java.bookTest.ProductPageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(edge)</span>
-                <span class="method-start">91213 ms</span>
+                <span class="method-start">176050 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkUrl</span>
-                <span class="method-start">100841 ms</span>
+                <span class="method-start">195053 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">100872 ms</span>
+                <span class="method-start">195096 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkUrl status=SUCCESS method=ProductPageTestCases.checkUrl()[pri:1, instance:com....)</span>
-                <span class="method-start">101230 ms</span>
+                <span class="method-start">195796 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">clickBookShelfTest</span>
-                <span class="method-start">101231 ms</span>
+                <span class="method-start">195797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">104540 ms</span>
+                <span class="method-start">200669 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=clickBookShelfTest status=SUCCESS method=ProductPageTestCases.clickBookShelfTest()[...)</span>
-                <span class="method-start">105094 ms</span>
+                <span class="method-start">201293 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">popupTest</span>
-                <span class="method-start">105095 ms</span>
+                <span class="method-start">201294 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">110546 ms</span>
+                <span class="method-start">206740 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=popupTest status=SUCCESS method=ProductPageTestCases.popupTest()[pri:3, instance:co...)</span>
-                <span class="method-start">111381 ms</span>
+                <span class="method-start">207025 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">PriceSliderTest</span>
-                <span class="method-start">111382 ms</span>
+                <span class="method-start">207026 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">125140 ms</span>
+                <span class="method-start">220736 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=PriceSliderTest status=SUCCESS method=ProductPageTestCases.PriceSliderTest()[pri:4,...)</span>
-                <span class="method-start">125378 ms</span>
+                <span class="method-name">getResult([TestResult name=PriceSliderTest status=FAILURE method=ProductPageTestCases.PriceSliderTest()[pri:4,...)</span>
+                <span class="method-start">220950 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">StorageTypeTest</span>
-                <span class="method-start">125380 ms</span>
+                <span class="method-start">220951 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">125739 ms</span>
+                <span class="method-start">221261 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">ExcludeOutOfStockTest</span>
-                <span class="method-start">125970 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=StorageTypeTest status=SUCCESS method=ProductPageTestCases.StorageTypeTest()[pri:5,...)</span>
-                <span class="method-start">125970 ms</span>
+                <span class="method-start">221412 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ExcludeOutOfStockTest</span>
+                <span class="method-start">221413 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">126163 ms</span>
+                <span class="method-start">222555 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=ExcludeOutOfStockTest status=SUCCESS method=ProductPageTestCases.ExcludeOutOfStockT...)</span>
-                <span class="method-start">126436 ms</span>
+                <span class="method-name">getResult([TestResult name=ExcludeOutOfStockTest status=FAILURE method=ProductPageTestCases.ExcludeOutOfStockT...)</span>
+                <span class="method-start">222723 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">listOfProductsTest</span>
-                <span class="method-start">126437 ms</span>
+                <span class="method-start">222724 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">130653 ms</span>
+                <span class="method-start">226929 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=listOfProductsTest status=SUCCESS method=ProductPageTestCases.listOfProductsTest()[...)</span>
-                <span class="method-start">130929 ms</span>
+                <span class="method-start">227122 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">130930 ms</span>
+                <span class="method-start">227123 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.java.bookTest.HomePageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(edge)</span>
-                <span class="method-start">136044 ms</span>
+                <span class="method-start">231143 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkUrl</span>
-                <span class="method-start">145730 ms</span>
+                <span class="method-start">267354 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">145753 ms</span>
+                <span class="method-start">267616 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkUrl status=SUCCESS method=HomePageTestCases.checkUrl()[pri:1, instance:com.jav...)</span>
-                <span class="method-start">146050 ms</span>
+                <span class="method-start">268014 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">checkTitle</span>
-                <span class="method-start">146052 ms</span>
+                <span class="method-start">268015 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">146071 ms</span>
+                <span class="method-start">268037 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkTitle status=SUCCESS method=HomePageTestCases.checkTitle()[pri:2, instance:com...)</span>
-                <span class="method-start">146370 ms</span>
+                <span class="method-start">268368 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ExtractDeal</span>
-                <span class="method-start">146371 ms</span>
+                <span class="method-start">268369 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">153091 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:c...)</span>
-                <span class="method-start">153400 ms</span>
+                <span class="method-start">274721 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">153400 ms</span>
+                <span class="method-start">275098 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=ExtractDeal status=SUCCESS method=HomePageTestCases.ExtractDeal()[pri:3, instance:c...)</span>
+                <span class="method-start">275098 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.java.bookTest.GiftCardPageTestCases</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest(edge)</span>
-                <span class="method-start">158218 ms</span>
+                <span class="method-start">279226 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">checkUrlTest</span>
-                <span class="method-start">168450 ms</span>
+                <span class="method-start">355360 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">168465 ms</span>
+                <span class="method-start">355446 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkUrlTest status=SUCCESS method=GiftCardPageTestCases.checkUrlTest()[pri:1, inst...)</span>
-                <span class="method-start">168732 ms</span>
+                <span class="method-start">355755 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">checkClickGiftCardTest</span>
-                <span class="method-start">168733 ms</span>
+                <span class="method-start">355756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">171937 ms</span>
+                <span class="method-start">388052 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=checkClickGiftCardTest status=SUCCESS method=GiftCardPageTestCases.checkClickGiftCa...)</span>
-                <span class="method-start">172320 ms</span>
+                <span class="method-start">388355 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">OccasionHandleTest</span>
-                <span class="method-start">172321 ms</span>
+                <span class="method-start">388356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">172781 ms</span>
+                <span class="method-start">388709 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=OccasionHandleTest status=SUCCESS method=GiftCardPageTestCases.OccasionHandleTest()...)</span>
-                <span class="method-start">172961 ms</span>
+                <span class="method-start">388908 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">AmountHandlerTest</span>
-                <span class="method-start">172962 ms</span>
+                <span class="method-start">388909 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">173099 ms</span>
+                <span class="method-start">389053 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=AmountHandlerTest status=SUCCESS method=GiftCardPageTestCases.AmountHandlerTest()[p...)</span>
-                <span class="method-start">173318 ms</span>
+                <span class="method-start">389413 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">DropDownHandlerTest</span>
-                <span class="method-start">173319 ms</span>
+                <span class="method-start">389415 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">173998 ms</span>
+                <span class="method-start">389921 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=DropDownHandlerTest status=SUCCESS method=GiftCardPageTestCases.DropDownHandlerTest...)</span>
-                <span class="method-start">174202 ms</span>
+                <span class="method-start">390144 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ButtonHandleTest</span>
-                <span class="method-start">174202 ms</span>
+                <span class="method-start">390145 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">174311 ms</span>
+                <span class="method-start">390263 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=ButtonHandleTest status=SUCCESS method=GiftCardPageTestCases.ButtonHandleTest()[pri...)</span>
-                <span class="method-start">174648 ms</span>
+                <span class="method-start">390456 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">enterFormDetailsTest(shreya, shreya1, 9.876543211E9, chotu, chotu@gmail.com, 9.876543212E9, park square, 700009.0)</span>
-                <span class="method-start">174706 ms</span>
+                <span class="method-start">390508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShot</span>
-                <span class="method-start">178345 ms</span>
+                <span class="method-start">394158 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=enterFormDetailsTest status=SUCCESS method=GiftCardPageTestCases.enterFormDetailsTe...)</span>
-                <span class="method-start">178818 ms</span>
+                <span class="method-start">394510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">178819 ms</span>
+                <span class="method-start">394510 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">182229 ms</span>
+                <span class="method-start">399001 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

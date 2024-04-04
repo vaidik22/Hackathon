@@ -12,8 +12,9 @@ public class ApachePOI {
 //new File("C:\\Users\\2320135\\eclipse-workspace\\HackathonProject\\apachepoi1.xlsx"));
 public Object[][] getData(String path,String filename,String sheetname) throws Exception
 {
-	String filePath = path + filename + ".xlsx";
-	FileInputStream file = new FileInputStream(filePath);
+	String directoryPath = System.getProperty("user.dir");
+	String relativePath = "/src/test/resources/ExcelFiles/TestData1.xlsx";
+	FileInputStream file = new FileInputStream(directoryPath + relativePath);
 	XSSFWorkbook workbook = new XSSFWorkbook(file);
 	XSSFSheet sheet = workbook.getSheet(sheetname);
 	int totalRows = sheet.getLastRowNum();

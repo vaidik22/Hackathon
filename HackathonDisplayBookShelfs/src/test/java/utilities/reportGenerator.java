@@ -29,7 +29,9 @@ public class reportGenerator
   @BeforeSuite
   public void startReport() 
   {
-	  extent = new ExtentReports("C:\\Users\\2320033\\git\\repository\\HackathonDisplayBookShelfs\\testResults\\testresults.html", true);
+	  String directoryPath = System.getProperty("user.dir");
+	  String relativePath = "/testResults/testresults.html";
+	  extent = new ExtentReports(directoryPath + relativePath, true);
   }
  
   @AfterSuite

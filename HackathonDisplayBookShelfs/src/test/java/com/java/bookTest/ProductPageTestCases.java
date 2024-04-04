@@ -20,8 +20,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 public class ProductPageTestCases extends reportGenerator {
 	WebDriver driver;
@@ -111,6 +113,7 @@ public class ProductPageTestCases extends reportGenerator {
 		Assert.assertTrue(flag);
 	}
 
+
 	@BeforeTest
 	  @Parameters("browser")
 		public void beforeTest(String browser) throws InterruptedException {
@@ -130,7 +133,21 @@ public class ProductPageTestCases extends reportGenerator {
 			Thread.sleep(2000);
 
 		}
-	 @AfterMethod
+	@BeforeMethod
+	public void beforeMethod(ITestResult result) {
+		String testName = result.getMethod().getMethodName();
+		System.out.println("\nRunning test: " + testName);
+	}
+	@AfterMethod
+	public void afterMethod(ITestResult result) throws Exception {
+		takeScreenShot();
+		if(result.isSuccess()) {
+			System.out.println("Result: PASSED");
+		}else {
+			System.out.println("Result: FAILED");			
+		}
+	}
+	
 	  public void takeScreenShot() throws Exception{
 		  String name  = "ProductPageSS" + num++;
 		  ss = new ScreenShot();

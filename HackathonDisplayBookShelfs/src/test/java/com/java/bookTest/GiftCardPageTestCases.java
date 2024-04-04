@@ -10,8 +10,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
@@ -150,12 +152,26 @@ public class GiftCardPageTestCases extends reportGenerator {
 		Thread.sleep(2000);
 
 	}
-  @AfterMethod
-  public void takeScreenShot() throws Exception{
-	  String name  = "GiftCardPageSS" + num++;
-	  ss = new ScreenShot();
-	  ss.takeScreenShot(driver, name);
-  }
+  @BeforeMethod
+	public void beforeMethod(ITestResult result) {
+		String testName = result.getMethod().getMethodName();
+		System.out.println("\nRunning test: " + testName);
+	}
+	@AfterMethod
+	public void afterMethod(ITestResult result) throws Exception {
+		takeScreenShot();
+		if(result.isSuccess()) {
+			System.out.println("Result: PASSED");
+		}else {
+			System.out.println("Result: FAILED");			
+		}
+	}
+	
+	  public void takeScreenShot() throws Exception{
+		  String name  = "ProductPageSS" + num++;
+		  ss = new ScreenShot();
+		  ss.takeScreenShot(driver, name);
+	  }
 
 	@AfterTest
 	public void afterTest() {
